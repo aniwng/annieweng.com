@@ -1,0 +1,242 @@
+body {
+	font-family: Geneva, sans-serif;
+	letter-spacing: 1px;
+	height: 100%;
+	font-size: 11pt;
+    background: url(../img/P8020219-bg-opt.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+    padding-bottom: 125px;
+    color: #e3d8cf;
+}
+
+.navbar {
+	background-color: transparent;
+	border-bottom: 0px;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    opacity: .7;
+	filter: alpha(opacity=70);
+	-moz-opacity: .7;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+
+#navbar {
+	margin: 20px 0 0 80px;
+}
+
+#navbar > ul > li > a {
+	color: #e3d8cf;
+	text-transform: uppercase;	
+	padding: 15px 0px 3px 0px;
+    margin-right: 20px;
+    font-size: 10pt;
+}
+
+#navbar > ul > li > a:hover {
+	background-color: transparent;
+}
+
+#navbar > ul > li > a::after {
+  background: #FFFFFF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+}
+
+#navbar > ul > li > a:hover::after,
+#navbar > ul > li > a:focus::after {
+	opacity: 1;
+	transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+
+.navbar-nav > li {
+    padding: 0px;
+    margin-right: 20px;
+    margin-left: 0px;
+    font-family: Quicksand, Geneva, sans-serif;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-inverse .navbar-collapse {
+        border-color: transparent;
+    }
+
+    .navbar li a {
+        display: inline-block;
+    }
+
+    .cube-link {
+        width: 325px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-container {
+        margin-top: 0 !important;
+    }
+}
+
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+@font-face {
+	font-family: BrainFlower;
+	src: url(../fonts/BrainFlower.ttf);
+}
+
+@font-face {
+    font-family: Allura;
+    src: url(../fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand_Book.otf);
+}
+
+#name:hover {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.heading {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.link {
+    padding: 35px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    color: #e3d8cf;
+    text-decoration: none;
+    opacity: 0.5;
+    border: 1px solid #e3d8cf;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.link:hover {
+    background-color: #e3d8cf;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -moz-opacity: .8;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+
+}
+
+.link:hover span.fa {
+    color: #697e81;
+}
+
+.link:hover {
+    opacity: .5;
+}
+
+.intro {
+    line-height: 20pt;
+    text-align: center;
+}
+
+.intro h3.first {
+    font-family: BrainFlower;
+    font-size: 55pt;
+    color: #e3cac8;
+    margin-top: 5px;
+}
+
+.intro p {
+    font-family: Quicksand;
+    text-transform: lowercase;
+    font-size: 12pt;
+}
+
+.img-frame {
+    border: 1px solid #e3d8cf;
+    background-color: #e3d8cf;
+    opacity: .75;
+}
+
+.content-container {
+    margin-top: 100px;
+}
+
+.profile-pic {
+    margin: 5px;
+}
+
+
+.cube-link {
+    margin-top: 50px;
+    text-align: center;
+}
