@@ -208,14 +208,14 @@ body {
     text-align: center;
 }
 
-.intro h3.first {
+.intro h1.header {
     font-family: BrainFlower;
     font-size: 55pt;
     color: #e3cac8;
     margin-top: 5px;
 }
 
-.intro p {
+.intro h2.subheader {
     font-family: Quicksand;
     text-transform: lowercase;
     font-size: 12pt;
