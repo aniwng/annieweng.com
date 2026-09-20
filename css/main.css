@@ -291,7 +291,10 @@ main.hero{
   padding: 40px 0 64px;
 }
 
-h1{
+h1{ margin: 0; font-weight: inherit; }
+
+.greeting{
+  display: block;
   font-family: 'Caveat', cursive;
   font-weight: 600;
   font-size: clamp(28px, 3.6vw, 34px);
@@ -305,6 +308,7 @@ h1{
 }
 
 .name{
+  display: block;
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-weight: 500;
@@ -397,7 +401,7 @@ h1{
 
 @media (prefers-reduced-motion: reduce){
   .shape, .cloud, .card{ animation: none; }
-  h1, .name, .lede, .links{ animation: none; opacity: 1; transform: none; }
+  .greeting, .name, .lede, .links{ animation: none; opacity: 1; transform: none; }
   html{ scroll-behavior: auto; }
   .sparkle-layer{ display: none; }
 }
